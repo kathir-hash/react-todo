@@ -1,0 +1,94 @@
+:root{
+    --Purple: #6A0DAD;
+    --Yellow: #daebad;
+    --Gray: #A9A9A9;
+    --white:#ffff
+}
+.listcontainer{
+    display: flex;
+    background-color: var(--Yellow);
+    padding: 4em 5em;
+    margin: 7em;
+    width: 50em;
+    flex-direction: column;
+    gap: 1.5em;
+    color: var(--white);
+}
+.listcontainer h1{
+    color: var(--Purple);
+    word-spacing: -.2em;
+}
+button{
+    color: white;
+    width: 70%;
+    padding:.4em 1em;
+    align-self: flex-start;
+    border-radius: 10px;
+
+}
+.listbody{
+    width: 90%;
+    background-color: var(--Purple);
+    display: flex;
+    padding: 2em;
+    border-radius: 10px;
+    margin: 0%;
+    max-height: 100px;
+}
+h6,p{
+   padding-left: 0px;
+    margin:0em;
+    /* background-color: black; */
+    display: inline-flex;
+}
+h6{
+    font-size: 1.5em;
+    font-weight: 900;
+}
+p{
+    font-size: 1.3em;
+    font-weight: 500;
+    text-align: left;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+   padding: .4em;
+   min-width: 200px;
+    gap: 10px;
+
+}
+.action{
+    display: flex;
+    flex-direction: column;
+    /* background-color: white; */
+    padding: .7em;
+    width:30% ;
+    gap: 1em;
+}
+.ctask{
+
+    width: 90%;
+    background-color: rgb(166, 247, 166);
+    display: flex;
+    padding: 2em;
+    border-radius: 10px;
+    margin: 0%;
+    max-height: 100px;
+}
+/* .ctask button{
+    display: none;
+} */
+button:hover {
+    cursor: pointer;
+}
+.ctask .content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   padding: 0;
+   color: var(--Purple);
+    /* background-color: white; */
+   align-items: start;
+}
