@@ -38,7 +38,7 @@ export default function TaskList({ data }) {
                     <div key={val.id} className={val.com ? 'ctask' : `listbody`}>
                         <div className='content'>
                             <h6>Task Name: {val?.name}</h6>
-                            <p>Description: {val?.description}</p>
+                            {/* <p>Description: {val?.description}</p> */}
                         </div>
                         <div className='action'>
                             <button onClick={() => completetask(val.id)} style={{ backgroundColor: 'green',display:val.com?'none':'block' }}>Complete</button>

@@ -1,10 +1,10 @@
 .header{
-    background-color: rgb(238, 238, 151);
+    background-color: rgb(173, 98, 254);
    width: 100%;
    text-align: center;
    /* margin: 1.3em; */
    padding: 0.4em;
-   color: rgb(152, 43, 152);
+   color: rgb(243, 243, 243);
 
    
 }
@@ -16,7 +16,7 @@
 }
 h1{
     margin: 0;
-    padding: 0;
+    padding: 0.4em;
     word-spacing: -0.1em;
     word-wrap:break-word ;
     font-size: 200%;
@@ -25,7 +25,7 @@ h1{
 
 @media (max-width: 400px){
     .header{
-        background-color: rgb(238, 238, 151);
+        background-color: rgb(145, 34, 197);
        width: 400px;
        text-align: center;
        /* margin: 1.3em; */

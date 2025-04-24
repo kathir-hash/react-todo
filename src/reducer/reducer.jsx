@@ -1,8 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+
 const form={   
 task:null,
-tasklist:[{id:1,name:'watch tv' ,description:'watch tv',com:false}]
+tasklist:[{id:1,name:'watch tv',com:false}]
 } 
  const taskslice=createSlice({
     name:"task",
@@ -20,7 +21,9 @@ tasklist:[{id:1,name:'watch tv' ,description:'watch tv',com:false}]
         compltask(state,action){
            state.tasklist= state.tasklist.map((val)=>{return val.id===action.payload?{...val,com:true}:val})
         }
-    }
+    },
+  
+    
 })
 
 export const {addtask,deletetask,compltask}=taskslice.actions;

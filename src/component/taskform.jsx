@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import '../css/taskform.css'
 import TaskList  from './TaskList'
 import { useDispatch, useSelector } from 'react-redux';
@@ -7,13 +7,13 @@ import { addtask } from '../reducer/reducer';
 const form={
     
     name:"",
-    description:"",
     com:false,
 }
 var j=1;
 export default function TaskForm(params) {
-    // const taskform=[{id:1,name:'watch tv',description:"watchy tv from 10 to 11 vcjgjdjfnsafdms"}]
-    // const [ data,setdata]= useState(taskform);
+    
+
+
     const [task,settask]=useState(form);
 
     const {tasklist}=useSelector((state)=>state.task);
@@ -30,6 +30,11 @@ export default function TaskForm(params) {
       });
     
    }
+   const all = ()=>{
+   }
+   const j =useEffect(()=>{all()},
+   [])
+
     const handlesubmit=(e)=>{
         e.preventDefault()
         if(task.name==="")
@@ -42,7 +47,7 @@ export default function TaskForm(params) {
                 console.log("err")
                 return 
             }
-        
+        console.log(task)
 
         dispatch(addtask(task))
         settask(form)
@@ -50,7 +55,7 @@ export default function TaskForm(params) {
     }
     return<>
 
-<div style={{ width:'100%',display:'flex',gap:'10em'}}> 
+<div style={{ width:'95%',display:'flex',margin:'3em',gap:'4em',justifyContent:'flex-start',backgroundColor:'#daebad',borderRadius:'10px'}}> 
 
     <div className="container bg" >
         
@@ -58,7 +63,7 @@ export default function TaskForm(params) {
         <h1 className='txt'>Add Task</h1>
         <hr />
             <input  onChange={handleschange} className="txt" type="text" name="name" placeholder="Enter Task Name" />
-            <input  onChange={handleschange} className="txt" type="text" name="description" placeholder="Enter description" />
+            {/* <input  onChange={handleschange} className="txt" type="text" name="description" placeholder="Enter description" /> */}
             <button type='Submit'> create Task</button>
         </form>
     </div>

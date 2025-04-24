@@ -1,6 +1,6 @@
 :root{
-    --Purple: #6A0DAD;
-    --Yellow: #daebad;
+    --Purple: #e2d4ed;
+    --Yellow: #7abef2;
     --Gray: #A9A9A9;
 }
 
@@ -24,7 +24,7 @@
     font-weight: 400;
 }
 form{
-    display: flex;
+    display: grid;
     flex-direction: column;
     gap:1rem;
    
